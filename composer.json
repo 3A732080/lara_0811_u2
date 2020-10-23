@@ -1,0 +1,11 @@
+{
+    "name": "ncut/lara_0811_u2",
+    "description": "autoload classes",
+    "authors": [
+        {
+            "name": "wu yi hsun",
+            "email": "tiffany89031176@gmail.com"
+        }
+    ],
+    "require": {}
+}
