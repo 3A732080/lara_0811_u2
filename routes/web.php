@@ -27,3 +27,6 @@ Route::get('r2', function () {
 
 Route::get('hello/{name}', function ($name='Everyboody') {return 'Hello,'.$name;});
 
+Route::get('r3', function () {
+    return view('welcome');
+});
