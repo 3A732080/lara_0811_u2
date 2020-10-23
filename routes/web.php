@@ -25,7 +25,14 @@ Route::get('r2', function () {
     return view('welcome');
 });
 
-Route::get('hello/{name}', function ($name='Everyboody') {return 'Hello,'.$name;});
+
+Route::get('hello/{name?}', ['as' =>'hello.index',function($name='Everybody'){
+    return 'Hello,'.$name;
+}]);
+
+Route::get('hello/{name?}', function ($name='Everyboody'){
+    return 'Hello,'.$name;
+})->name('hello.lindex');
 
 Route::get('r3', function () {
     return view('welcome');
